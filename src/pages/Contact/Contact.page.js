@@ -7,7 +7,7 @@ const ContactPage = () => {
   return (
     <DefaultPage>
       <main className="ContactPage">
-        <h1>Get in touch with us !</h1>
+        <h1>Get in touch with me!</h1>
 
         <Contact />
       </main>

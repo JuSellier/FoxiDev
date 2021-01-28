@@ -63,12 +63,11 @@
 }
 
 .Home-What,
-.Home-Why,
 .Home-How,
 .Home-Price {
   margin: 0 auto;
   max-width: 800px;
-  padding: 25vh 15px 25vh;
+  padding: 20vh 15px 20vh;
 
   display: flex;
   flex-direction: column;
@@ -97,17 +96,20 @@
 
   p {
     margin-bottom: 1rem;
+    font-weight: 200;
+    font-size: var(--h5);
   }
 }
 
 .Home-Contact {
-  padding: 15vh 0;
-  padding: 15px;
+  padding: 5vh 15px 10vh;
 
   margin: 0 auto;
   max-width: 800px;
 
   p {
     margin-bottom: 1rem;
+    font-weight: 200;
+    font-size: var(--h5);
   }
 }

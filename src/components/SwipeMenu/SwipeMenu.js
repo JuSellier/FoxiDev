@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import "./SwipeMenu.scss";
 
-import { BsArrowLeft as LeftIcon } from "react-icons/bs";
-import { BsArrowRight as RightIcon } from "react-icons/bs";
+import { RiArrowLeftSLine as LeftIcon } from "react-icons/ri";
+import { RiArrowRightSLine as RightIcon } from "react-icons/ri";
 
 const SwipeMenu = ({ children }) => {
   const swipeMenuEl = useRef();

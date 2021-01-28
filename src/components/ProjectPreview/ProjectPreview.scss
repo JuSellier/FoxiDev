@@ -3,7 +3,7 @@
   min-height: 10rem;
 
   border-radius: 5px;
-  box-shadow: 0 0 0 1px var(--txt-dim);
+  box-shadow: 0 0 0 1px var(--bg-dim);
 
   display: flex;
   flex-direction: column;
@@ -12,7 +12,6 @@
     font-size: var(--h3);
     font-family: var(--font-h);
     padding: 10px;
-    border-top: 1px solid var(--txt-dim);
   }
 
   &-Children {
@@ -42,11 +41,11 @@
 
 .ProjectPreview-Image {
   background-position: center;
-  background-size: 100%;
-  background-repeat: cover;
+  background-size: cover;
 
   height: 300px;
   border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid var(--bg-dim);
 
   transition: background-size 0.2s ease-in-out;
   cursor: pointer;
@@ -55,11 +54,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: radial-gradient(circle, var(--primary), transparent 90%);
+    background: radial-gradient(circle, var(--white), transparent 10%);
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
 
     svg {
       $size: 30px;
@@ -68,10 +67,6 @@
       stroke: var(--black);
       fill: var(--black);
     }
-  }
-
-  &:hover {
-    background-size: 110%;
   }
 
   &:hover > &-View {

@@ -30,6 +30,40 @@
     padding: 5px 15px;
     margin-bottom: 30px;
   }
+
+  // honeypot
+  &-LastInput {
+    display: none;
+  }
+
+  &-Error {
+    background: var(--primary-x);
+    max-width: max-content;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    transform: translateX(0);
+    opacity: 0;
+
+    svg {
+      margin-right: 10px;
+    }
+
+    animation: error-in 0.2s linear forwards;
+
+    @keyframes error-in {
+      from {
+        transform: translateX(-100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+  }
 }
 
 .Contact-Alternatives {
@@ -45,6 +79,10 @@
 
   p {
     font-weight: 200;
+    color: var(--txt-dim);
+  }
+
+  a {
     color: var(--txt-dim);
   }
 }

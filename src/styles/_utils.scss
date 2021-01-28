@@ -82,3 +82,9 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+// KEEPS ELEMENT CENTERED ON BIG SCREENS
+.contain {
+  max-width: 800px;
+  margin: 0 auto;
+}

@@ -12,31 +12,33 @@
 }
 
 .SwipeMenu-Nav {
-  display: flex;
-  justify-content: center;
+  position: relative;
+  // display: flex;
+  // justify-content: space-evenly;
 
-  padding: 0 10px;
+  // padding: 0 10px;
 }
 
 .SwipeMenu-Left,
 .SwipeMenu-Right {
-  // flex-grow: 0.5;
-  // width: 30%;
+  position: absolute;
+  top: -300px;
+
   min-height: 2rem;
   min-width: 2rem;
-  padding: 10px;
+  padding: 10px 5px;
   cursor: pointer;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
   svg {
     border-radius: 50%;
+    background: rgba(#000000, $alpha: 0.8);
+    stroke: var(--white);
+    fill: var(--white);
+
     padding: 5px;
     min-height: 2rem;
     min-width: 2rem;
-    box-shadow: 0 0 0 1px var(--txt);
+    // box-shadow: 0 0 0 1px var(--txt);
     transition: box-shadow 0.1s ease-in;
   }
 
@@ -48,9 +50,9 @@
 }
 
 .SwipeMenu-Left {
-  left: 10px;
+  left: 0;
 }
 
 .SwipeMenu-Right {
-  right: 10px;
+  right: 0;
 }

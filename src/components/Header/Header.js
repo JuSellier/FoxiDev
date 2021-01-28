@@ -34,13 +34,12 @@ const Header = () => {
       <nav ref={navEl} className="Header-Nav">
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
-        <Link to="/portfolio">Portfolio</Link>
         <Link
           to="/contact"
           className="Header-Nav-Cta link-button slide-gradient"
         >
           <ButtonIcon />
-          Get a quote today
+          Contact
         </Link>
       </nav>
     </header>

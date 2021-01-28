@@ -10,11 +10,10 @@ const Footer = () => {
         <CopyrightIcon />
         FoxiDev. All rights reserved.
       </div>
-      <nav className="Footer-Nav">
+      <nav className="Footer-Nav contain">
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
         <Link to="/contact">Contact</Link>
-        <Link to="/apply">Apply for a certificate</Link>
       </nav>
     </footer>
   );
