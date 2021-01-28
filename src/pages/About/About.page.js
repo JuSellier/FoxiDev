@@ -32,8 +32,7 @@ const About = () => {
           foxes.
         </p>
 
-        <h2>Got another question?</h2>
-        <h3>Just ask it using the form below.</h3>
+        <h2>Got another question? Just ask.</h2>
         <Contact />
       </main>
     </DefaultPage>

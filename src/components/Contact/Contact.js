@@ -47,12 +47,6 @@ const Contact = () => {
   return (
     <section className="Contact">
       <form className="Contact-Form">
-        <label htmlFor="name">Name</label>
-        <input
-          type="text"
-          id="name"
-          onChange={(e) => setName(e.target.value)}
-        />
         <label htmlFor="email">Email adress</label>
         <input
           type="email"
@@ -60,12 +54,21 @@ const Contact = () => {
           required
           onChange={(e) => setEmail(e.target.value)}
         />
+
         <label htmlFor="phone">Phone number</label>
         <input
           type="text"
           id="phone"
           onChange={(e) => setPhoneNumber(e.target.value)}
         />
+
+        <label htmlFor="name">Your name</label>
+        <input
+          type="text"
+          id="name"
+          onChange={(e) => setName(e.target.value)}
+        />
+
         <label htmlFor="message">Message</label>
         <textarea
           type="text"
@@ -80,6 +83,7 @@ const Contact = () => {
           onChange={(e) => setHoneyPot(e.target.value)}
           className="Contact-Form-LastInput"
         />
+
         {error && (
           <div className="Contact-Form-Error">
             <ErrorIcon />

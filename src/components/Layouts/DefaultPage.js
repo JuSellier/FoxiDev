@@ -26,7 +26,7 @@ const DefaultPage = ({ children }) => {
           }
         },
         {
-          rootMargin: "-10%",
+          rootMargin: "-7%",
         }
       );
       observer.observe(el);

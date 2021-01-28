@@ -49,11 +49,6 @@ const Home = () => {
         </Link>
       </section>
 
-      <section className="Home-Price">
-        <h2 className="fade-in">Transparent pricing.</h2>
-        <p className="fade-in">My hourly rate is 70 euros per hour. Fixed.</p>
-      </section>
-
       <HomePortfolio />
 
       <section className="Home-Contact">

@@ -12,6 +12,11 @@
     color: var(--txt-dim);
     font-weight: 100;
     font-family: var(--font-p);
+
+    svg {
+      fill: var(--txt-dim);
+      stroke: var(--txt-dim);
+    }
   }
 }
 
