@@ -7,7 +7,7 @@ const About = () => {
   return (
     <DefaultPage>
       <main className="About contain">
-        <h1>About me</h1>
+        <h1>A few words about me</h1>
 
         <h2>Who am I?</h2>
         <p>

@@ -1,11 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Home.page.scss";
 import DefaultPage from "../../components/Layouts/DefaultPage";
 
 import { FiChevronsDown as ScrollDownIcon } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import ProjectPreview from "../../components/ProjectPreview/ProjectPreview";
-import SwipeMenu from "../../components/SwipeMenu/SwipeMenu";
 import Contact from "../../components/Contact/Contact";
 import HomePortfolio from "./HomePortfolio/HomePortfolio";
 
