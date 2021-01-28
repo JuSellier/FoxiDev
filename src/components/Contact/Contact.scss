@@ -1,0 +1,50 @@
+.Contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.Contact-Form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+
+  label {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-family: var(--font-h);
+    font-size: var(--h4);
+  }
+
+  input {
+    max-width: 30ch;
+    margin-bottom: 10px;
+  }
+
+  textarea {
+    resize: vertical;
+    max-width: 80ch;
+    margin-bottom: 10px;
+  }
+
+  button {
+    padding: 5px 15px;
+    margin-bottom: 30px;
+  }
+}
+
+.Contact-Alternatives {
+  border-top: 1px solid var(--bg-dim);
+  padding: 10px 0;
+
+  &-Title {
+    margin-top: 20px;
+    font-family: var(--font-h);
+    font-size: var(--h3);
+    font-weight: 200;
+  }
+
+  p {
+    font-weight: 200;
+    color: var(--txt-dim);
+  }
+}

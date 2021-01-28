@@ -1,0 +1,84 @@
+// MAKE A LINK LOOK LIKE A BUTTON (NEEDS BACKGROUND)
+.link-button {
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none !important;
+  max-width: max-content;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: var(--h6);
+  letter-spacing: 2px;
+}
+
+// TEXT BACKGROUND GRADIENT
+.text-gradient {
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  background: linear-gradient(111deg, var(--primary), var(--primary-x));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+// FADE IN ANIMATION
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  &.visible {
+    opacity: 1;
+  }
+}
+
+// BACKGROUND GRADIENT SLIDE
+.slide-gradient {
+  background-image: linear-gradient(
+    111deg,
+    var(--bg),
+    var(--primary),
+    var(--primary-x)
+  );
+  background-size: 500%;
+  animation: slidegradient 10s ease infinite alternate;
+  @keyframes slidegradient {
+    from {
+      background-position: left;
+    }
+    to {
+      background-position: right;
+    }
+  }
+}
+
+.button-hover-gradient {
+  background-image: linear-gradient(
+    111deg,
+    var(--bg),
+    var(--primary-x),
+    var(--primary)
+  );
+  background-size: 900%;
+
+  &:hover {
+    animation: slide 1s ease-out forwards;
+  }
+
+  @keyframes slide {
+    from {
+      background-position: left;
+    }
+    to {
+      background-position: right;
+    }
+  }
+}
+
+// REMOVES SCROLLBAR BUT KEEPS FUNCTIONALITY
+.no-scrollbar {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

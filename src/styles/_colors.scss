@@ -1,0 +1,38 @@
+// COLORS
+html {
+  --black: #1f1f20;
+  --black-dim: #424244;
+
+  --white: #f8f9ff;
+  --white-dim: #bdbdc2;
+
+  --primary-gradient: linear-gradient(111deg, var(--primary), var(--primary-x));
+}
+
+// DARK MODE (DEFAULT)
+html {
+  --txt: var(--white);
+  --txt-dim: var(--white-dim);
+  --bg: var(--black);
+  --bg-dim: var(--black-dim);
+
+  --primary: #dd5100;
+  --primary-x: #f81515;
+}
+
+// LIGHT MODE
+html.light {
+  --txt: var(--black);
+  --txt-dim: var(--black-dim);
+  --bg: var(--white);
+  --bg-dim: var(--white-dim);
+
+  --primary: #ff7525;
+  --primary-x: #ff4242;
+}
+
+// DEFAULT BODY
+body {
+  background: var(--bg);
+  transition: background 1s ease-out;
+}

@@ -1,0 +1,80 @@
+.ProjectPreview {
+  min-width: calc(100vw - 50px);
+  min-height: 10rem;
+
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px var(--txt-dim);
+
+  display: flex;
+  flex-direction: column;
+
+  &-Title {
+    font-size: var(--h3);
+    font-family: var(--font-h);
+    padding: 10px;
+    border-top: 1px solid var(--txt-dim);
+  }
+
+  &-Children {
+    p {
+      padding: 0 10px 10px;
+      color: var(--txt-dim);
+    }
+  }
+
+  &-Link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    border-radius: 0 0 5px 5px;
+    margin-top: auto;
+    max-width: 100%;
+    text-transform: uppercase;
+    font-family: var(--font-h);
+    border-top: 1px solid var(--bg-dim);
+  }
+
+  @media screen and (min-width: 500px) {
+    min-width: 500px;
+  }
+}
+
+.ProjectPreview-Image {
+  background-position: center;
+  background-size: 100%;
+  background-repeat: cover;
+
+  height: 300px;
+  border-radius: 5px 5px 0 0;
+
+  transition: background-size 0.2s ease-in-out;
+  cursor: pointer;
+
+  &-View {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle, var(--primary), transparent 90%);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+
+    svg {
+      $size: 30px;
+      min-height: $size;
+      min-width: $size;
+      stroke: var(--black);
+      fill: var(--black);
+    }
+  }
+
+  &:hover {
+    background-size: 110%;
+  }
+
+  &:hover > &-View {
+    opacity: 1;
+  }
+}

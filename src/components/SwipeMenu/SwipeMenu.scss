@@ -1,0 +1,56 @@
+.SwipeMenu {
+  display: flex;
+  overflow-x: scroll;
+  padding: 10px 25px;
+  scroll-behavior: smooth;
+
+  &-Wrapper {
+    display: flex;
+    column-gap: 20px;
+    padding-right: 25px;
+  }
+}
+
+.SwipeMenu-Nav {
+  display: flex;
+  justify-content: center;
+
+  padding: 0 10px;
+}
+
+.SwipeMenu-Left,
+.SwipeMenu-Right {
+  // flex-grow: 0.5;
+  // width: 30%;
+  min-height: 2rem;
+  min-width: 2rem;
+  padding: 10px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    border-radius: 50%;
+    padding: 5px;
+    min-height: 2rem;
+    min-width: 2rem;
+    box-shadow: 0 0 0 1px var(--txt);
+    transition: box-shadow 0.1s ease-in;
+  }
+
+  &:hover {
+    svg {
+      box-shadow: 0 0 5px 1px var(--primary);
+    }
+  }
+}
+
+.SwipeMenu-Left {
+  left: 10px;
+}
+
+.SwipeMenu-Right {
+  right: 10px;
+}

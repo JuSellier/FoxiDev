@@ -1,0 +1,28 @@
+.Footer {
+  border-top: 1px solid var(--bg-dim);
+  padding: 10px 10px calc(45px + 2rem);
+
+  &-Legal {
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 3px;
+    color: var(--txt-dim);
+    font-weight: 100;
+    font-family: var(--font-p);
+  }
+}
+
+.Footer-Nav {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 10px 0;
+
+  a {
+    font-size: var(--h5);
+    font-family: var(--font-p);
+    font-weight: 100;
+  }
+}

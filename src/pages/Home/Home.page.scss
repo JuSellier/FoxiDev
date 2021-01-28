@@ -1,0 +1,113 @@
+.Home {
+}
+
+.Home-Intro {
+  position: relative;
+  border-top: 1px solid grey;
+  padding: 15px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 500;
+
+  background: var(--bg);
+  transition: background 1s ease-out;
+
+  h1 {
+    font-weight: 300;
+    letter-spacing: 3px;
+    z-index: 502;
+
+    .text-gradient {
+      font-weight: 700;
+    }
+  }
+
+  &-ScrollDown {
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    padding: 10px;
+    width: max-content;
+    height: max-content;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid var(--txt-dim);
+
+    display: flex;
+    align-items: center;
+
+    animation: move 1s infinite alternate;
+
+    svg {
+      fill: none;
+    }
+
+    @keyframes move {
+      from {
+        transform: translateX(-50%) translateY(-5px);
+      }
+      to {
+        transform: translateX(-50%) translateY(5px);
+      }
+    }
+
+    svg {
+      min-width: 2.2rem;
+      min-height: 2.2rem;
+    }
+  }
+}
+
+.Home-What,
+.Home-Why,
+.Home-How,
+.Home-Price {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 25vh 15px 25vh;
+
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  row-gap: 1rem;
+
+  h2 {
+  }
+  p,
+  ul > li {
+    font-size: var(--h5);
+    font-weight: 200;
+    color: var(--txt-dim);
+  }
+}
+
+.Home-Portfolio {
+  padding: 25vh 0;
+
+  h2,
+  p {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0 15px;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
+.Home-Contact {
+  padding: 15vh 0;
+  padding: 15px;
+
+  margin: 0 auto;
+  max-width: 800px;
+
+  p {
+    margin-bottom: 1rem;
+  }
+}

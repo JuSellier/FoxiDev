@@ -1,0 +1,21 @@
+.ScrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  z-index: 400;
+
+  display: flex;
+  align-items: center;
+
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px var(--txt);
+  padding: 5px;
+  background: var(--bg);
+
+  cursor: pointer;
+
+  svg {
+    min-width: 2rem;
+    min-height: 2rem;
+  }
+}
