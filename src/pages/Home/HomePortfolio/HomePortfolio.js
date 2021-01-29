@@ -23,6 +23,16 @@ const HomePortfolio = () => {
         </ProjectPreview>
 
         <ProjectPreview
+          title="Voice to Text for Chrome"
+          imgUrl="https://images.pexels.com/photos/804269/pexels-photo-804269.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        >
+          <p>
+            A minimal web app to transcribe your voice to text and copy it to
+            your clipboard.
+          </p>
+        </ProjectPreview>
+
+        <ProjectPreview
           title="Surf Camp"
           imgUrl="https://images.pexels.com/photos/390051/surfer-wave-sunset-the-indian-ocean-390051.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
         >
