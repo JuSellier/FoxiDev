@@ -103,7 +103,7 @@ const Contact = () => {
       <div className="Contact-Alternatives">
         <div className="Contact-Alternatives-Title">LinkedIn</div>
         <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
-          Contact via LinkedIn profile
+          Contact me via LinkedIn
         </a>
       </div>
     </section>
