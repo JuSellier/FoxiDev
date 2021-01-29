@@ -12,7 +12,7 @@ const About = () => {
         <h2>Who am I?</h2>
         <p>
           Nice to e-meet you! I'm Julien, I grew up in France and I also spent a
-          few years in Amsterdam. I love travelling, coding, cooking, playing
+          few years in Amsterdam. I love travelling, surfing, cooking, playing
           guitar and learning new stuff.
         </p>
 

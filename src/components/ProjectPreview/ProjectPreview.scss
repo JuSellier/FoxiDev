@@ -1,5 +1,5 @@
 .ProjectPreview {
-  min-width: calc(100vw - 50px);
+  width: calc(100vw - 50px);
   min-height: 10rem;
 
   border-radius: 5px;
@@ -34,8 +34,8 @@
     border-top: 1px solid var(--bg-dim);
   }
 
-  @media screen and (min-width: 500px) {
-    min-width: 500px;
+  @media screen and (min-width: 550px) {
+    width: 500px;
   }
 }
 

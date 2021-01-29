@@ -16,17 +16,24 @@ const HomePortfolio = () => {
         </ProjectPreview>
 
         <ProjectPreview
-          title="NeoPrivacy"
-          imgUrl="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80"
+          title="Algorithmic Art"
+          imgUrl="https://images.pexels.com/photos/804269/pexels-photo-804269.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
         >
-          <p>The privacy-friendly trustmark.</p>
+          <p>An algorithmic art project.</p>
         </ProjectPreview>
 
         <ProjectPreview
-          title="FoxiUI"
-          imgUrl="https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80"
+          title="Surf Camp"
+          imgUrl="https://images.pexels.com/photos/390051/surfer-wave-sunset-the-indian-ocean-390051.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
         >
-          <p>The web dev toolkit.</p>
+          <p>A prototype for a surf camp wesite.</p>
+        </ProjectPreview>
+
+        <ProjectPreview
+          title="Guitar Lessons"
+          imgUrl="https://images.pexels.com/photos/3987249/pexels-photo-3987249.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        >
+          <p>A prototype for a guitar courses business website.</p>
         </ProjectPreview>
       </SwipeMenu>
     </section>

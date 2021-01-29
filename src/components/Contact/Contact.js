@@ -47,7 +47,7 @@ const Contact = () => {
   return (
     <section className="Contact">
       <form className="Contact-Form">
-        <label htmlFor="email">Email adress</label>
+        <label htmlFor="email">Your email adress</label>
         <input
           type="email"
           id="email"
@@ -62,7 +62,7 @@ const Contact = () => {
           onChange={(e) => setPhoneNumber(e.target.value)}
         />
 
-        <label htmlFor="name">Your name</label>
+        <label htmlFor="name">Name</label>
         <input
           type="text"
           id="name"

@@ -55,10 +55,10 @@
   background-image: linear-gradient(
     111deg,
     var(--bg),
-    var(--primary-x),
-    var(--primary)
+    var(--primary),
+    var(--primary-x)
   );
-  background-size: 900%;
+  background-size: 1000%;
 
   &:hover {
     animation: slide 1s ease-out forwards;

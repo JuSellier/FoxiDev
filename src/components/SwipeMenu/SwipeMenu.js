@@ -10,13 +10,13 @@ const SwipeMenu = ({ children }) => {
   function scrollRight() {
     const el = swipeMenuEl.current;
     console.log(el);
-    el.scrollLeft += 400;
+    el.scrollLeft += 525;
   }
 
   function scrollLeft() {
     const el = swipeMenuEl.current;
     console.log(el);
-    el.scrollLeft -= 400;
+    el.scrollLeft -= 525;
   }
 
   return (
