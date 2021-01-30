@@ -8,23 +8,43 @@ const LightToggle = () => {
 
   useEffect(() => {
     const lightPref = localStorage.getItem("light");
-    console.log(`Prefers light mode: ${lightPref}`);
-    if (lightPref === "true" && light === false) setLight(() => true);
-    else if (lightPref === "false" && light === true) setLight(() => false);
+
+    if (lightPref === null) {
+      const currentDate = new Date();
+      const time = currentDate.getHours();
+      if (time >= 8 && time <= 20) {
+        setLight(() => true);
+      } else {
+        setLight(() => false);
+      }
+    }
+
+    if (lightPref === "true" && light === false) {
+      return setLight(() => true);
+    } else if (lightPref === "false" && light === true) {
+      return setLight(() => false);
+    }
   }, []);
 
   useEffect(() => {
     if (light === true) {
       document.documentElement.classList.add("light");
-      localStorage.setItem("light", true);
     } else if (light === false) {
       document.documentElement.classList.remove("light");
-      localStorage.setItem("light", false);
     }
   }, [light]);
 
+  function toggleLight() {
+    if (light === false) {
+      localStorage.setItem("light", true);
+    } else if (light === true) {
+      localStorage.setItem("light", false);
+    }
+    setLight((curr) => !curr);
+  }
+
   return (
-    <div className="LightToggle" onClick={() => setLight((curr) => !curr)}>
+    <div className="LightToggle" onClick={toggleLight}>
       {light ? <MoonIcon /> : <SunIcon />}
     </div>
   );

@@ -1,22 +1,16 @@
-.Home {
-}
-
 .Home-Intro {
-  position: relative;
   border-top: 1px solid grey;
-  padding: 15px;
-  min-height: 100vh;
+  min-height: 80vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  z-index: 500;
-
-  background: var(--bg);
   transition: background 1s ease-out;
 
   h1 {
+    padding: 15px;
     font-weight: 300;
     letter-spacing: 3px;
     z-index: 502;
@@ -25,39 +19,33 @@
       font-weight: 700;
     }
   }
+}
 
-  &-ScrollDown {
-    position: absolute;
-    bottom: 100px;
-    left: 50%;
-    padding: 10px;
-    width: max-content;
-    height: max-content;
-    cursor: pointer;
+.Home-ScrollDown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  svg {
+    $size: 3rem;
+    min-width: $size;
+    min-height: $size;
+
     border-radius: 50%;
     border: 1px solid var(--txt-dim);
 
-    display: flex;
-    align-items: center;
-
     animation: move 1s infinite alternate;
 
-    svg {
-      fill: none;
-    }
+    fill: none;
+  }
 
-    @keyframes move {
-      from {
-        transform: translateX(-50%) translateY(-5px);
-      }
-      to {
-        transform: translateX(-50%) translateY(5px);
-      }
+  @keyframes move {
+    from {
+      transform: translateY(-5px);
     }
-
-    svg {
-      min-width: 2.2rem;
-      min-height: 2.2rem;
+    to {
+      transform: translateY(5px);
     }
   }
 }

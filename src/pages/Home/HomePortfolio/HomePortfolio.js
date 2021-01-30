@@ -17,14 +17,14 @@ const HomePortfolio = () => {
 
         <ProjectPreview
           title="Algorithmic Art"
-          imgUrl="https://images.pexels.com/photos/804269/pexels-photo-804269.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          imgUrl="https://images.unsplash.com/photo-1510906594845-bc082582c8cc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1028&q=80"
         >
           <p>An algorithmic art project.</p>
         </ProjectPreview>
 
         <ProjectPreview
           title="Voice to Text for Chrome"
-          imgUrl="https://images.pexels.com/photos/804269/pexels-photo-804269.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          imgUrl="https://images.unsplash.com/photo-1423784346385-c1d4dac9893a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
         >
           <p>
             A minimal web app to transcribe your voice to text and copy it to

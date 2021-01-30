@@ -18,11 +18,11 @@ const Home = () => {
         <h1>
           Want <span className="text-gradient">creative</span> web development?
         </h1>
-
-        <div className="Home-Intro-ScrollDown" onClick={scrollDownIntro}>
-          <ScrollDownIcon />
-        </div>
       </section>
+
+      <div className="Home-ScrollDown" onClick={scrollDownIntro}>
+        <ScrollDownIcon />
+      </div>
 
       <section className="Home-What">
         <h2 className="fade-in">
