@@ -3,6 +3,12 @@ import "./About.page.scss";
 import DefaultPage from "../../components/Layouts/DefaultPage";
 import Contact from "../../components/Contact/Contact";
 
+import { FaReact as ReactIcon } from "react-icons/fa";
+import { FaNodeJs as NodeIcon } from "react-icons/fa";
+import { SiMongodb as MongoDbIcon } from "react-icons/si";
+import { FaSass as SassIcon } from "react-icons/fa";
+import { IoCreateOutline as P5Icon } from "react-icons/io5";
+
 const About = () => {
   return (
     <DefaultPage>
@@ -21,6 +27,30 @@ const About = () => {
           I code websites and web apps. To do this, I use the Sass, React, Node
           (with Express) and MongoDB.
         </p>
+
+        <h2>What tools do I use?</h2>
+        <ul>
+          <li>
+            <ReactIcon />
+            React
+          </li>
+          <li>
+            <SassIcon />
+            Sass
+          </li>
+          <li>
+            <NodeIcon />
+            NodeJS / Express
+          </li>
+          <li>
+            <MongoDbIcon />
+            MongoDB
+          </li>
+          <li>
+            <P5Icon />
+            P5.js (creative coding library)
+          </li>
+        </ul>
 
         <h2>Why FoxiDev?</h2>
         <p>

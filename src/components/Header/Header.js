@@ -6,6 +6,7 @@ import { GiFoxHead as FoxIcon } from "react-icons/gi";
 import { BiMenuAltLeft as NavToggleIcon } from "react-icons/bi";
 import { VscClose as CloseIcon } from "react-icons/vsc";
 import { RiArrowDropRightLine as ButtonIcon } from "react-icons/ri";
+import HeaderIcon from "./HeaderIcon";
 
 const Header = () => {
   const [expanded, setExpanded] = useState();
@@ -20,7 +21,7 @@ const Header = () => {
   return (
     <header className="Header">
       <Link to="/" className="Header-Name">
-        <FoxIcon />
+        <HeaderIcon />
         FoxiDev.io
       </Link>
 
