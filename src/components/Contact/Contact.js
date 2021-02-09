@@ -37,6 +37,21 @@ const Contact = () => {
       message,
     };
     console.log(formInputs);
+
+    fetch("https://foxidev.heroku.app/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formInputs),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Success:", data);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
   }
 
   function validateEmail(inputEmail) {
