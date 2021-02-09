@@ -69,6 +69,15 @@
       font-family: var(--font-h);
       font-weight: 200;
       text-transform: uppercase;
+
+      &.active {
+        color: #808080;
+
+        svg {
+          stroke: #808080;
+          fill: #808080;
+        }
+      }
     }
 
     &-Cta {
