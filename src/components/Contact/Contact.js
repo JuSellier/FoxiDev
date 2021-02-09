@@ -38,7 +38,7 @@ const Contact = () => {
     };
     console.log(formInputs);
 
-    fetch("https://foxidev.heroku.app/contact", {
+    fetch("https://foxidev.herokuapp.com/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
