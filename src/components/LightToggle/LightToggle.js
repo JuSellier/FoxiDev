@@ -24,6 +24,7 @@ const LightToggle = () => {
     } else if (lightPref === "false" && light === true) {
       return setLight(() => false);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
