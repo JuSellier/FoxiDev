@@ -7,11 +7,17 @@ const ExperimentsPage = () => {
   return (
     <DefaultPage>
       <main className="ExperimentsPage">
-        <h1>Web dev experiments</h1>
+        <h1 className="contain">Web dev experiments</h1>
 
-        <Link to="/e/dynamic-cursor">Dynamic Cursor</Link>
-        <Link to="/e/progressive-scrollbar">Progressive Scrollbar</Link>
-        <Link to="/e/interactive-background">Interactive Background</Link>
+        <Link className="contain" to="/e/dynamic-cursor">
+          Dynamic Cursor
+        </Link>
+        <Link className="contain" to="/e/progressive-scrollbar">
+          Progressive Scrollbar
+        </Link>
+        <Link className="contain" to="/e/interactive-background">
+          Interactive Background
+        </Link>
       </main>
     </DefaultPage>
   );

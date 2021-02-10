@@ -8,7 +8,7 @@ const InteractiveBackground = () => {
   useEffect(() => {
     const arr = [];
     const NUMBER_OF_PARTICLES =
-      (window.innerWidth / 20) * (window.innerHeight / 20);
+      (window.innerWidth / 40) * (window.innerHeight / 40);
     for (let i = 0; i < NUMBER_OF_PARTICLES; i++) arr[i] = 1;
     setParticles(() => arr);
   }, []);
@@ -16,7 +16,13 @@ const InteractiveBackground = () => {
   return (
     <ExperimentPage>
       <div className="InteractiveBackground">
-        <h1>Damn. That's a nice background hover effect</h1>
+        <h1 className="contain">Damn. That's a nice background hover effect</h1>
+        <h1 className="contain">Damn. That's a nice background hover effect</h1>
+        <h1 className="contain">Damn. That's a nice background hover effect</h1>
+        <h1 className="contain">Damn. That's a nice background hover effect</h1>
+        <h1 className="contain">Damn. That's a nice background hover effect</h1>
+        <h1 className="contain">Damn. That's a nice background hover effect</h1>
+        <h1 className="contain">Damn. That's a nice background hover effect</h1>
 
         <div className="InteractiveBackground-Wrapper">
           {particles.map((val, index) => {

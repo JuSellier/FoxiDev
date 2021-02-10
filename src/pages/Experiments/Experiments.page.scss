@@ -2,13 +2,6 @@
   display: flex;
   flex-direction: column;
 
-  & > * {
-    max-width: 1000px;
-    width: 100%;
-    padding: 10px var(--size-sides);
-    margin: 0 auto;
-  }
-
   & > a {
     margin: 3vh auto;
   }
