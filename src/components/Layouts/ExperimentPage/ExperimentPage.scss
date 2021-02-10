@@ -5,6 +5,12 @@
   padding: 10px;
   gap: 10px;
 
+  z-index: 10;
+
+  &-Back {
+    background: var(--bg);
+  }
+
   & > * {
     border-radius: 5px;
     padding: 5px 10px;
