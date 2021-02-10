@@ -55,11 +55,15 @@ const DynamicCursor = () => {
     <ExperimentPage>
       <div ref={pageEl} className="DynamicCursor">
         <section>
-          <h1>Dynamic cursor (optimized for Desktop)</h1>
+          <h1>Dynamic cursor</h1>
+          <p> The dynamic cursor is optimized for desktop.</p>
         </section>
 
         <section className="DynamicCursor-ClickableEls">
-          <p>The dynamic cursor changes when hovering clickable elements</p>
+          <p>
+            You can make it react to hovering over clickable elements such as
+            button or links. Try hovering over the elements below...
+          </p>
           <button className="slide-gradient cursor-clickable">
             I'm a button
           </button>
@@ -69,9 +73,9 @@ const DynamicCursor = () => {
         </section>
 
         <section className="DynamicCursor-Filter">
-          <p className="cursor-invert">
+          <h2 className="cursor-invert">
             Hover over this text to see something cool.
-          </p>
+          </h2>
         </section>
 
         <div ref={pointEl} className="Cursor-Point"></div>
