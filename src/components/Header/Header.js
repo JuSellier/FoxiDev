@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./Header.scss";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 // import { GiFoxHead as FoxIcon } from "react-icons/gi";
 import { BiMenuAltLeft as NavToggleIcon } from "react-icons/bi";
@@ -33,15 +33,27 @@ const Header = () => {
       </div>
 
       <nav ref={navEl} className="Header-Nav">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link
+        <NavLink exact activeClassName="active" to="/">
+          Home
+        </NavLink>
+
+        <NavLink exact activeClassName="active" to="/about">
+          About
+        </NavLink>
+
+        <NavLink exact activeClassName="active" to="/experiments">
+          Experiments
+        </NavLink>
+
+        <NavLink
+          exact
+          activeClassName="active"
           to="/contact"
           className="Header-Nav-Cta link-button slide-gradient"
         >
           <ButtonIcon />
           Contact
-        </Link>
+        </NavLink>
       </nav>
     </header>
   );

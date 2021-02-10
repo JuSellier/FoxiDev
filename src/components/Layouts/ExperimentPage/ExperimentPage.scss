@@ -1,0 +1,19 @@
+.Experiment-Header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+
+  z-index: 10;
+
+  &-Back {
+    background: var(--bg);
+  }
+
+  & > * {
+    border-radius: 5px;
+    padding: 5px 10px;
+    box-shadow: 0 0 0 1px var(--bg-dim);
+  }
+}
