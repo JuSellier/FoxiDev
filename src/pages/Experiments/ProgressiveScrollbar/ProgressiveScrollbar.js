@@ -4,7 +4,9 @@ import ExperimentPage from "../../../components/Layouts/ExperimentPage/Experimen
 
 const ProgressiveScrollbar = () => {
   const progressWrapperEl = useRef();
+  const progressHWrapperEl = useRef();
   const progressEl = useRef();
+  const progressHEl = useRef();
   const pageEl = useRef();
 
   useEffect(() => {
@@ -21,17 +23,32 @@ const ProgressiveScrollbar = () => {
     console.log(yScroll, maxScroll);
     const height = (yScroll / maxScroll) * 100;
     progressWrapperEl.current.style.height = `${height}vh`;
-
     progressEl.current.innerText = `${Math.floor(height)}%`;
+
+    progressHWrapperEl.current.style.width = `${height}vw`;
+    progressHEl.current.innerText = `${Math.floor(height)}%`;
   }
 
   return (
     <ExperimentPage>
       <div ref={pageEl} className="ProgressiveScrollbar">
         <h1>Progressive Scrollbar</h1>
+        <p>Scroll down to explore</p>
 
         <div ref={progressWrapperEl} className="ProgressiveScrollbar-Progress">
           <div ref={progressEl} className="ProgressiveScrollbar-Progress-Value">
+            0%
+          </div>
+        </div>
+
+        <div
+          ref={progressHWrapperEl}
+          className="ProgressiveScrollbar-HProgress"
+        >
+          <div
+            ref={progressHEl}
+            className="ProgressiveScrollbar-HProgress-Value"
+          >
             0%
           </div>
         </div>
