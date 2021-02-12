@@ -82,11 +82,11 @@
 
   @keyframes circle-pulse {
     from {
-      box-shadow: 0 0 0 1px var(--primary);
+      box-shadow: 0 0 0 1px #80808050;
     }
 
     to {
-      box-shadow: 0 0 2px 5px #80808050;
+      box-shadow: 0 0 2px 5px var(--primary);
     }
   }
 }

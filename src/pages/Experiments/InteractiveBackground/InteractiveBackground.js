@@ -21,8 +21,6 @@ const InteractiveBackground = () => {
         <h1 className="contain">Damn. That's a nice background hover effect</h1>
         <h1 className="contain">Damn. That's a nice background hover effect</h1>
         <h1 className="contain">Damn. That's a nice background hover effect</h1>
-        <h1 className="contain">Damn. That's a nice background hover effect</h1>
-        <h1 className="contain">Damn. That's a nice background hover effect</h1>
 
         <div className="InteractiveBackground-Wrapper">
           {particles.map((val, index) => {

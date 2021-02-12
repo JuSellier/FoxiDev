@@ -57,12 +57,12 @@
           filter: hue-rotate(0deg);
         }
 
-        90% {
-          transform: translate(-50%, -50%) scale(6);
+        95% {
+          transform: translate(-50%, -50%) scale(12);
         }
 
         100% {
-          transform: translate(-50%, -50%) scale(5);
+          transform: translate(-50%, -50%) scale(10);
           filter: hue-rotate(360deg);
         }
       }
